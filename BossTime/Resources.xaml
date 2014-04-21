@@ -1,0 +1,83 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:s="clr-namespace:System;assembly=mscorlib">
+	
+	<ImageBrush x:Key="BossBackground" ImageSource="Art/Textures/BossBackground.png" />
+	<ImageBrush x:Key="BossBackgroundLocked" ImageSource="Art/Textures/BossBackgroundLocked.png" />
+	<FontFamily x:Key="Menomonia">https://d1h9a8s8eodvjz.cloudfront.net//fonts/menomonia/08-02-12/font/menomonia.ttf</FontFamily>
+	<FontFamily x:Key="MenomoniaItalic">https://d1h9a8s8eodvjz.cloudfront.net//fonts/menomonia/08-02-12/font/menomonia-italic.ttf</FontFamily>
+	<s:Double x:Key="BossNameFontSize">22</s:Double>
+	<s:Double x:Key="BossNameFontSizeLink">12</s:Double>
+	<SolidColorBrush x:Key="ColorYellow" Color="#FFDDCC00" />
+	<SolidColorBrush x:Key="ColorLightGray" Color="#FFCCCCCC" />
+	<SolidColorBrush x:Key="ColorMediumGray" Color="#FF555555" />
+	
+	<Style
+		x:Key="TextBlockBossName"
+		TargetType="{x:Type TextBlock}">
+		<Setter
+			Property="SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FontFamily"
+			Value="Menomonia" />
+		<Setter
+			Property="FontSize"
+			Value="{StaticResource BossNameFontSize}" />
+		<Setter
+			Property="Foreground"
+			Value="{StaticResource ColorYellow}" />
+	</Style>
+
+	<Style
+		x:Key="TextBlockBossNameLocked"
+		TargetType="{x:Type TextBlock}">
+		<Setter
+			Property="SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FontFamily"
+			Value="Menomonia" />
+		<Setter
+			Property="FontSize"
+			Value="{StaticResource BossNameFontSize}" />
+		<Setter
+			Property="Foreground"
+			Value="{StaticResource ColorLightGray}" />
+	</Style>
+
+	<Style
+		x:Key="TextBlockBossDescription"
+		TargetType="{x:Type TextBlock}">
+		<Setter
+			Property="SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FontFamily"
+			Value="Menomonia" />
+		<Setter
+			Property="FontSize"
+			Value="{StaticResource BossNameFontSizeLink}" />
+		<Setter
+			Property="Foreground"
+			Value="{StaticResource ColorYellow}" />
+	</Style>
+
+	<Style
+		x:Key="TextBlockBossDescriptionLocked"
+		TargetType="{x:Type TextBlock}">
+		<Setter
+			Property="SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FontFamily"
+			Value="Menomonia" />
+		<Setter
+			Property="FontSize"
+			Value="{StaticResource BossNameFontSizeLink}" />
+		<Setter
+			Property="Foreground"
+			Value="{StaticResource ColorMediumGray}" />
+	</Style>
+</ResourceDictionary>
